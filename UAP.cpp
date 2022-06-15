@@ -8,7 +8,7 @@ struct Antrian {
   queue<int> que;
   queue<int> quu;
   
-  void tambah(){
+  void tambah(int no){
     if(no == 1){
       cout << "|========================================|" << endl;
       cout << "|           NO. ANTREAN : " << antri1 << "             |" << endl;
@@ -29,7 +29,7 @@ struct Antrian {
     }
   }
   
-  void panggil(){
+  void panggil(int no){
     if (!que.empty() && no == 1){
       cout << "|========================================|" << endl;
       cout << "|             No. Antrean " << que.front() <<  "              |" << endl;
