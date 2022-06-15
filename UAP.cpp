@@ -13,7 +13,7 @@ struct Antrian {
       cout << "|========================================|" << endl;
       cout << "|           NO. ANTREAN : " << antri1 << "             |" << endl;
       cout << "|========================================|" << endl;
-      cout << "|          Silahkan Menunggu             |" << endl;
+      cout << "|           Silahkan Menunggu            |" << endl;
       cout << "|========================================|" << endl;
       que.push(antri1);
       antri1++;
@@ -22,9 +22,9 @@ struct Antrian {
       cout << "|========================================|" << endl;
       cout << "|           NO. ANTREAN : " << antri2 << "             |" << endl;
       cout << "|========================================|" << endl;
-      cout << "|          Silahkan Menunggu             |" << endl;
+      cout << "|           Silahkan Menunggu            |" << endl;
       cout << "|========================================|" << endl;
-      quu.push(antri2);
+      que.push(antri2);
       antri2++;
     }
   }
