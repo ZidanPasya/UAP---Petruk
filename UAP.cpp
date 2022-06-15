@@ -145,4 +145,50 @@ int main(){
                         break;
                 }
                 break;
-  
+             case 2 :
+                mulai3 :
+                system("cls");
+                antre.pilih();
+                cout << "\n\nMasukkan pilihan \n>> ";
+                cin >> choose3;
+                switch(choose3){
+                    case 1 :
+                        system("cls");
+                        antre.tambah(choose1);
+                        getch();
+                        goto mulai3;
+                        break;
+                    case 2 :
+                        system("cls");
+                        antre.panggil(choose1);
+                        getch();
+                        goto mulai3;
+                        break;
+                    case 3 :
+                        system("cls");
+                        antre.print(antre.quu, choose1);
+                        getch();
+                        goto mulai3;
+                        break;
+                    case 4 :
+                        goto mulai1;
+                    default :
+                        cout << "Maaf pilihan Anda tidak tersedia" << endl;
+                        getch();
+                        goto mulai1;
+                        break;
+                }
+                break;
+            case 3 :
+                cout << "Terima kasih telah menggunakan program kami :) " << endl;
+                getch();
+                system("cls");
+                break;
+            default :
+                cout << "Maaf pilihan Anda tidak tersedia" << endl;
+                getch();
+                system("cls");
+                break;
+        }
+    } while (choose1 != 3);
+}
