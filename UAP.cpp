@@ -71,5 +71,78 @@ struct Antrian {
       }
       cout << "|========================================|" << endl;
     }
-  }
-};
+    else {
+            cout << "|========================================|" << endl;
+            cout << "|             Antrean kosong             |" << endl;
+            cout << "|========================================|" << endl;
+        }
+    }
+
+    void menu(){
+        cout << "|=========================================|" << endl;
+        cout << "|  Selamat datang di Bank East Indonesia  |" << endl;
+        cout << "|=========================================|" << endl;
+        cout << "|  1. Teller                              |" << endl;
+        cout << "!  2. Customer Service                    |" << endl;
+        cout << "|  3. Keluar                              |" << endl;
+        cout << "|=========================================|" << endl;
+    }
+
+    void pilih(){
+        cout << "|========================================|" << endl;
+        cout << "|  1. Tambah antrean                     |" << endl;
+        cout << "|  2. Panggil antrean                    |" << endl;
+        cout << "!  3. Lihat antrean                      |" << endl;
+        cout << "|  4. Keluar                             |" << endl;
+        cout << "|========================================|" << endl;
+    }
+
+} antre;
+
+
+int main(){
+    int choose1, choose2, choose3;
+
+    do {
+        mulai1 :
+        system("cls");
+        antre.menu();
+        cout << "\n\nMasukkan pilihan \n>> ";
+        cin >> choose1;
+
+        switch(choose1){
+            case 1 :
+                mulai2 :
+                system("cls");
+                antre.pilih();
+                cout << "\n\nMasukkan pilihan \n>> ";
+                cin >> choose2;
+                switch(choose2){
+                    case 1 :
+                        system("cls");
+                        antre.tambah(choose1);
+                        getch();
+                        goto mulai2;
+                        break;
+                    case 2 :
+                        system("cls");
+                        antre.panggil(choose1);
+                        getch();
+                        goto mulai2;
+                        break;
+                    case 3 :
+                        system("cls");
+                        antre.print(antre.que, choose1);
+                        getch();
+                        goto mulai2;
+                        break;
+                    case 4 :
+                        goto mulai1;
+                    default :
+                        cout << "Maaf pilihan Anda tidak tersedia" << endl;
+                        getch();
+                        goto mulai1;
+                        break;
+                }
+                break;
+  
