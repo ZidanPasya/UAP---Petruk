@@ -71,34 +71,7 @@ struct Antrian {
       }
       cout << "|========================================|" << endl;
     }
-    else {
-            cout << "|========================================|" << endl;
-            cout << "|             Antrean kosong             |" << endl;
-            cout << "|========================================|" << endl;
-        }
-    }
-
-    void menu(){
-        cout << "|=========================================|" << endl;
-        cout << "|  Selamat datang di Bank East Indonesia  |" << endl;
-        cout << "|=========================================|" << endl;
-        cout << "|  1. Teller                              |" << endl;
-        cout << "!  2. Customer Service                    |" << endl;
-        cout << "|  3. Keluar                              |" << endl;
-        cout << "|=========================================|" << endl;
-    }
-
-    void pilih(){
-        cout << "|========================================|" << endl;
-        cout << "|  1. Tambah antrean                     |" << endl;
-        cout << "|  2. Panggil antrean                    |" << endl;
-        cout << "!  3. Lihat antrean                      |" << endl;
-        cout << "|  4. Keluar                             |" << endl;
-        cout << "|========================================|" << endl;
-    }
-
-} antre;
-
+   
 
 int main(){
     int choose1, choose2, choose3;
